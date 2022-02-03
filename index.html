@@ -6,8 +6,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Author 1
-Author 2
+Sydney Jordan
  
 Further Information:
 http://diystream.cns.utexas.edu/
@@ -17,7 +16,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The goal of this code it to identify whether the user's symptoms align with symptoms of a panic attack or a heart attack. This is done by calculating the probability of each ailment based on the responses to a series of questions.
  
 Known Issues:
 blah, blah, blah, blah
@@ -38,12 +37,12 @@ blah, blah, blah, blah
 
 
         function panicAdd(){ //start of code for function to be executed 
-            panic_count = panic_count + 1; //function to run that increases variable by 1   
+            panic_count = panic_count + 1; //function to run that increases panic attack variable by 1   
 
         } //end of code for function to be executed
 
         function heartAdd(){ //start of code for function to be executed 
-            heart_count = heart_count + 1; //function to run that increases variable by 1
+            heart_count = heart_count + 1; //function to run that increases heart attack variable by 1
         } //end of code for function to be executed 
 
 	function getresults(){ //start of function for results page
@@ -81,7 +80,7 @@ blah, blah, blah, blah
 }
 </style>
 <!--/z-index brings to top of targeted page 
-after initially displaying ant htmml body not part of a page first-->
+after initially displaying htmml body not part of a page first-->
 
 <body>
 <div id="header" class="w3-container w3-flat-midnight-blue">
@@ -98,84 +97,84 @@ after initially displaying ant htmml body not part of a page first-->
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 <div class="page" id="one"><!--/divide content to be displayed as a page -->
-	<div id="header" class="w3-container w3-flat-amethyst">
+	<div id="header" class="w3-container w3-flat-concrete">
 		<h1>Question 1</h1>
 	</div>
 	
     	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
-        	<p>Are your eyes watery or itchy?</p>
+        	<p>Do you have a sharp, stabbing pain in the middle of your chest?</p>
 		<a href="#two" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#two" onclick="heartAdd();" class="w3-btn w3-teal"> No</a>
+		<a href="#two" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a>
     	</div><!--/content -->
 </div>
 
 <div class="page" id="two"><!--/divide content to be displayed as a page -->
-	<div class="w3-container w3-flat-amethyst">
+	<div class="w3-container w3-flat-concrete">
 		<h1>Question 2</h1>
 	</div>
 	
 	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
-		<p>Do you have a fever?</p>
+		<p>Do you have a squeezing pain and pressure in your chest?</p>
 		<a href="#three" onclick="heartAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#three" onclick="panicAdd();" class="w3-btn w3-teal"> No</a>
+		<a href="#three" onclick="panicAdd();" class="w3-btn w3-cyan"> No</a>
 	</div><!--/content -->
 </div>	
 
 <div class="page" id="three"><!--/divide content to be displayed as a page -->
-	<div class="w3-container w3-flat-amethyst">
+	<div class="w3-container w3-flat-concrete">
 		<h1>Question 3</h1>
 	</div>
 	
 	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
-		<p>Do you have a sore throat?</p>
+		<p>Does the pain radiate to your arm, jaw, or shoulder blades?</p>
 		<a href="#four" onclick="heartAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#four" onclick="panicAdd();" class="w3-btn w3-teal"> No</a>
+		<a href="#four" onclick="panicAdd();" class="w3-btn w3-cyan"> No</a>
 	</div><!--/content -->
 </div>
 	
 <div class="page" id="four"><!--/divide content to be displayed as a page -->
-	<div id="header" class="w3-container w3-flat-amethyst">
+	<div id="header" class="w3-container w3-flat-concrete">
 		<h1>Question 4</h1>
 	</div>
 	
     	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
-        	<p>Are your symptoms seasonal or chronic?</p>
+        	<p>Do your symptoms get better over time, not lasting over 20-30 mintues?</p>
 		<a href="#five" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#five" onclick="heartAdd();" class="w3-btn w3-teal"> No</a>
+		<a href="#five" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a>
     	</div><!--/content -->
 </div>
 	
 <div class="page" id="five"><!--/divide content to be displayed as a page -->
-	<div class="w3-container w3-flat-amethyst">
+	<div class="w3-container w3-flat-concrete">
 		<h1>Question 5</h1>
 	</div>
 	
 	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
-		<p>Do you have general aches and pains?</p>
+		<p>Is your pain progressively getting worse with longer lasting symptoms?</p>
 		<a href="#six" onclick="heartAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#six" onclick="panicAdd();" class="w3-btn w3-teal"> No</a>
+		<a href="#six" onclick="panicAdd();" class="w3-btn w3-cyan"> No</a>
 	</div><!--/content -->
 </div>
 	
 <div class="page" id="six"><!--/divide content to be displayed as a page -->
-	<div id="header" class="w3-container w3-flat-amethyst">
+	<div id="header" class="w3-container w3-flat-concrete">
 		<h1>Question 6</h1>
 	</div>
 	
     	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
-        	<p>Is your mucus thin and watery?</p>
+        	<p>Do you have a racing heart rate?</p>
 		<a href="#results" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#results" onclick="heartAdd();" class="w3-btn w3-teal"> No</a>
+		<a href="#results" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a>
     	</div><!--/content -->
 </div>
 
 <div class="page" id="results"><!--/divide content to be displayed as a page -->
-	<div class="w3-container w3-flat-midnight-blue">
+	<div class="w3-container w3-flat-pomegranate">
 		<h1>Results</h1>
 	</div>
 	
 		<p>Click to calculate your results!</p>
-		<a href="#results" onclick="getresults();" class="w3-btn w3-pink w3-round-xxlarge">Get your results here</a>
+		<a href="#results" onclick="getresults();" class="w3-btn w3-black w3-round-xxlarge"><b>Get your results here</b></a>
 		<p id="results-section"></p>
 		
 </div><!--/changing html content using innerhtml property -->
