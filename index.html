@@ -6,7 +6,8 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Sydney Jordan
+Sydney Jordan, Maker Space FRI Stream
+sydneyjor@utexas.edu
  
 Further Information:
 http://diystream.cns.utexas.edu/
@@ -19,7 +20,7 @@ Brief Description of Goal of Code:
 The goal of this code it to identify whether the user's symptoms align with symptoms of a panic attack or a heart attack. This is done by calculating the probability of each ailment based on the responses to a series of questions.
  
 Known Issues:
-blah, blah, blah, blah
+None
 -->
 
    <head> 
@@ -34,10 +35,10 @@ blah, blah, blah, blah
 <script>
 	// The following code lets you know when the file was last modified.
 	// This will help you know if you are looking at the new version of the file or if there is a delay on GitHub.
-       var docMod = document.lastModified;
-       alert("This file last modified  " + docMod);
-       console.log("This file last modified  " + docMod);
-	// If you find the alert box annoying, comment out that line and timestamp will still show up in the debugging console
+      //var docMod = document.lastModified;
+      //alert("This file last modified  " + docMod);
+      //console.log("This file last modified  " + docMod);
+	// commenting out alert code
 
 	// The following code contains the variables and functions to reach the probability results.
         var panic_count = 0; //start panic attack variable store initialized at 0 
@@ -105,7 +106,7 @@ after initially displaying htmml body not part of a page first-->
 	
 	<a href="#one" class="w3-btn w3-pink w3-round-xxlarge"> Get Started </a>
 	
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream and Maker Space Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<img src="https://flo.health/media/4477/download/A%20woman%20having%20a%20panic%20attack%20or%20heart%20attack.jpg?v=1" alt="Woman with Panic Attack or Heart Attack">
 
@@ -116,8 +117,8 @@ after initially displaying htmml body not part of a page first-->
 	
     	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
         	<p>Do you have a sharp, stabbing pain in the middle of your chest?</p>
-		<a href="#two" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#two" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a>
+		<a href="#two" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a><!/--adds one to panic attack on click of yes-->
+		<a href="#two" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a><!/--adds one to heart attack on click of no-->
     	</div><!--/content -->
 </div>
 
@@ -128,8 +129,8 @@ after initially displaying htmml body not part of a page first-->
 	
 	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
 		<p>Do you have a squeezing pain and pressure in your chest?</p>
-		<a href="#three" onclick="heartAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#three" onclick="panicAdd();" class="w3-btn w3-cyan"> No</a>
+		<a href="#three" onclick="heartAdd();" class="w3-btn w3-blue-gray"> Yes</a><!/--adds one to heart attack on click of yes-->
+		<a href="#three" onclick="panicAdd();" class="w3-btn w3-cyan"> No</a><!/--adds one to panic attack on click of no-->
 	</div><!--/content -->
 </div>	
 
@@ -176,8 +177,32 @@ after initially displaying htmml body not part of a page first-->
 	
     	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
         	<p>Do you have a racing heart rate?</p>
-		<a href="#results" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a>
-		<a href="#results" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a>
+		<a href="#seven" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a>
+		<a href="#seven" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a>
+    	</div><!--/content -->
+</div>
+	
+<div class="page" id="seven"><!--/divide content to be displayed as a page -->
+	<div id="header" class="w3-container w3-flat-wet-asphalt">
+		<h1>Question 7</h1>
+	</div>
+	
+    	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
+        	<p>Are you experiencing shakiness and tingling in hands?</p>
+		<a href="#eight" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a>
+		<a href="#eight" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a>
+    	</div><!--/content -->
+</div>
+
+<div class="page" id="eight"><!--/divide content to be displayed as a page -->
+	<div id="header" class="w3-container w3-flat-wet-asphalt">
+		<h1>Question 8</h1>
+	</div>
+	
+    	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
+        	<p>Are you experiencing symptoms of nausea and vomiting?</p>
+		<a href="#results" onclick="heartAdd();" class="w3-btn w3-blue-gray"> Yes</a>
+		<a href="#results" onclick="panicAdd();" class="w3-btn w3-cyan"> No</a>
     	</div><!--/content -->
 </div>
 
