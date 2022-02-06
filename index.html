@@ -93,9 +93,8 @@ None
         		max-width:90%;
         	}
 </style>
-<!--/z-index brings to top of targeted page 
-after initially displaying htmml body not part of a page first-->
-
+<!--/z-index brings to top of targeted page after initially displaying htmml body not part of a page first-->
+<!--/img, object resizes image-->
 <body>
 <div id="header" class="w3-container w3-flat-midnight-blue">
 	<h1>Panic Attack or Heart Attack?</h1><!--/html body not part of a page that will be displayed first -->
@@ -109,16 +108,16 @@ after initially displaying htmml body not part of a page first-->
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream and Maker Space Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<img src="https://flo.health/media/4477/download/A%20woman%20having%20a%20panic%20attack%20or%20heart%20attack.jpg?v=1" alt="Woman with Panic Attack or Heart Attack">
-
+		<!--/specified path image link-->
 <div class="page" id="one"><!--/divide content to be displayed as a page -->
-	<div id="header" class="w3-container w3-flat-wet-asphalt">
+	<div id="header" class="w3-container w3-flat-wet-asphalt"><!--/page header color-->
 		<h1>Question 1</h1>
 	</div>
 	
     	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
-        	<p>Do you have a sharp, stabbing pain in the middle of your chest?</p>
-		<a href="#two" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a><!/--adds one to panic attack on click of yes-->
-		<a href="#two" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a><!/--adds one to heart attack on click of no-->
+        	<p>Do you have a sharp, stabbing pain in the middle of your chest?</p><!--/page question in paragraph-->
+		<a href="#two" onclick="panicAdd();" class="w3-btn w3-blue-gray"> Yes</a><!--/adds one to panic attack on click of yes-->
+		<a href="#two" onclick="heartAdd();" class="w3-btn w3-cyan"> No</a><!--/adds one to heart attack on click of no-->
     	</div><!--/content -->
 </div>
 
@@ -129,8 +128,8 @@ after initially displaying htmml body not part of a page first-->
 	
 	<div id="content" class="w3-container"><!--/button code to trigger JavaScript event -->
 		<p>Do you have a squeezing pain and pressure in your chest?</p>
-		<a href="#three" onclick="heartAdd();" class="w3-btn w3-blue-gray"> Yes</a><!/--adds one to heart attack on click of yes-->
-		<a href="#three" onclick="panicAdd();" class="w3-btn w3-cyan"> No</a><!/--adds one to panic attack on click of no-->
+		<a href="#three" onclick="heartAdd();" class="w3-btn w3-blue-gray"> Yes</a><!--/adds one to heart attack on click of yes-->
+		<a href="#three" onclick="panicAdd();" class="w3-btn w3-cyan"> No</a><!--/adds one to panic attack on click of no-->
 	</div><!--/content -->
 </div>	
 
@@ -219,8 +218,8 @@ after initially displaying htmml body not part of a page first-->
 		
 </div><!--/changing html content using innerhtml property -->
 
-<footer class="w3-bottom w3-container w3-flat-concrete">
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+<footer class="w3-bottom w3-container w3-flat-concrete"><!--/footer color-->
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p><!--/footer text-->
 </footer>
 
 	   
